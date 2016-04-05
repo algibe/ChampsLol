@@ -1,0 +1,6 @@
+<resources>
+    <declare-styleable name="LOLChamp">
+        <attr name="imgChamp" format="integer"/>
+
+    </declare-styleable>
+</resources>
