@@ -12,11 +12,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 
 public class LOLChamp extends LinearLayout {
 
     private ImageView imgChamp;
+    private TextView nameChamp;
 
     public LOLChamp(Context context) {
         super(context);
@@ -39,6 +41,7 @@ public class LOLChamp extends LinearLayout {
         inflater.inflate(R.layout.lolchamp,this);
 
         imgChamp = (ImageView)findViewById(R.id.champSelect);
+        nameChamp = (TextView)findViewById(R.id.nameChamp);
 
         //Load attributes
         TypedArray a = getContext().obtainStyledAttributes(
@@ -47,12 +50,21 @@ public class LOLChamp extends LinearLayout {
         Drawable s = a.getDrawable(R.styleable.LOLChamp_imgChamp);
         if (s != null) { setImg(s);}
 
+        String n = a.getString(R.styleable.LOLChamp_nameChamp);
+        if (s != null) { setImg(s);}
+
         a.recycle();
 
     }
 
     public void setImg(Drawable champ){
         imgChamp.setImageDrawable(champ);
+        invalidate();
+        requestLayout();
+    }
+
+    public void setNameChamp(String name){
+        nameChamp.setText(name);
         invalidate();
         requestLayout();
     }
