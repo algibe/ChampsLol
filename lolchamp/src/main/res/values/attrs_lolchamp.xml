@@ -3,5 +3,11 @@
         <attr name="imgChamp" format="integer"/>
         <attr name="nameChamp" format="string"/>
 
+        <attr name="valueAtaque" format="integer"/>
+        <attr name="valueDefensa" format="integer"/>
+        <attr name="valueHabilidad" format="integer"/>
+        <attr name="valueDificultad" format="integer"/>
+
+
     </declare-styleable>
 </resources>

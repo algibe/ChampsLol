@@ -17,6 +17,10 @@ import android.widget.Toast;
 public class SelectionChamp extends AppCompatActivity {
 
     public static final String nameChamp = "champName";
+    public static final String keyValueAtaque = "ataque";
+    public static final String keyValueDefensa = "defensa";
+    public static final String keyValueHabilidad = "habilidad";
+    public static final String keyValueDificultad = "dificultad";
 
     private Spinner champName;
     private String selectedChamp;
@@ -72,10 +76,23 @@ public class SelectionChamp extends AppCompatActivity {
 
     public void selectChamp(View view) {
 
+        int valueAtaque = seekBarbAtaque.getProgress();
+        int valueDefensa = seekBarDefensa.getProgress();
+        int valueHabilidad = seekBarHabilidad.getProgress();
+        int valueDificultad = seekBarDificultad.getProgress();
+
+        /*Toast.makeText(this,"Ataque : " + valueAtaque +
+                "\nDefensa : " +valueDefensa+
+                "\nHabilidad : " +valueHabilidad+
+                "\nDificultad : " +valueDificultad,Toast.LENGTH_LONG).show();*/
         Intent intent = new Intent(this,PreviewChamp.class);
 
         Bundle bundle = new Bundle();
         bundle.putString(nameChamp, selectedChamp);
+        bundle.putInt(keyValueAtaque, valueAtaque);
+        bundle.putInt(keyValueDefensa, valueDefensa);
+        bundle.putInt(keyValueHabilidad, valueHabilidad);
+        bundle.putInt(keyValueDificultad,valueDificultad);
         intent.putExtras(bundle);
 
         startActivity(intent);

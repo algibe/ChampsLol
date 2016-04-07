@@ -14,6 +14,7 @@
         android:layout_height="150dp" />
 
     <LinearLayout
+        android:background="#ffffff"
         android:orientation="horizontal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -32,6 +33,110 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="id_user"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="5dp"
+        android:background="@drawable/borde_ataque"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_gravity="center"
+            android:text="Ataque"
+            android:layout_width="80dp"
+            android:gravity="end"
+            android:layout_height="wrap_content" />
+        <SeekBar
+            android:layout_weight="2"
+            android:max="10"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBarAtaque" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="5dp"
+        android:background="@drawable/borde_defensa"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_gravity="center"
+            android:text="Defensa"
+            android:layout_width="80dp"
+            android:gravity="end"
+            android:layout_height="wrap_content" />
+        <SeekBar
+            android:layout_weight="2"
+            android:max="10"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBarDefensa" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="5dp"
+        android:background="@drawable/borde_habilidad"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_gravity="center"
+            android:text="Habilidad"
+            android:layout_width="80dp"
+            android:gravity="end"
+            android:layout_height="wrap_content" />
+        <SeekBar
+            android:layout_weight="2"
+            android:max="10"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBarHabilidad" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:padding="5dp"
+        android:background="@drawable/borde_dificultad"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_gravity="center"
+            android:text="Dificultad"
+            android:layout_width="80dp"
+            android:gravity="end"
+            android:layout_height="wrap_content" />
+        <SeekBar
+            android:layout_weight="2"
+            android:max="10"
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seekBarDificultad" />
 
     </LinearLayout>
 
