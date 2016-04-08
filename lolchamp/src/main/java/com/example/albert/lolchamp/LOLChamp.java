@@ -12,13 +12,15 @@ import android.text.TextPaint;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
 
-public class LOLChamp extends LinearLayout {
+public class LOLChamp extends LinearLayout implements View.OnClickListener {
 
     private ImageView imgChamp;
     private TextView nameChamp;
@@ -27,6 +29,12 @@ public class LOLChamp extends LinearLayout {
     private SeekBar seekBarDefensa;
     private SeekBar seekBarHabilidad;
     private SeekBar seekBarDificultad;
+
+    private Button add;
+
+    private EditText idUser;
+
+    private OnAddChampClickedListener mCallback = null;
 
     public LOLChamp(Context context) {
         super(context);
@@ -55,6 +63,10 @@ public class LOLChamp extends LinearLayout {
         seekBarDefensa = (SeekBar)findViewById(R.id.seekBarDefensa);
         seekBarHabilidad = (SeekBar)findViewById(R.id.seekBarHabilidad);
         seekBarDificultad = (SeekBar)findViewById(R.id.seekBarDificultad);
+
+        add = (Button)findViewById(R.id.addChamp);
+
+        idUser = (EditText)findViewById(R.id.idUser);
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
             seekBarbAtaque.setProgressTintList(ColorStateList.valueOf(Color.parseColor("#A33D34")));
@@ -87,6 +99,25 @@ public class LOLChamp extends LinearLayout {
 
         a.recycle();
 
+        add.setOnClickListener(this);
+
+    }
+
+    public interface  OnAddChampClickedListener {
+        public void onAddChampClicked(LOLChamp source, String idUser,int ataque,int defensa,int habilidad,int dificultad);
+    }
+
+    public void setOnAddChampClickedListener(OnAddChampClickedListener listener ){
+        mCallback = listener;
+    }
+
+    @Override
+    public void onClick(View v) {
+        if(v.getId() == R.id.addChamp){
+            if(mCallback != null){
+                mCallback.onAddChampClicked(this,idUser.getText().toString(),seekBarbAtaque.getProgress(),seekBarDefensa.getProgress(),seekBarHabilidad.getProgress(),seekBarDificultad.getProgress());
+            }
+        }
     }
 
     public void setImg(Drawable champ){
@@ -124,6 +155,7 @@ public class LOLChamp extends LinearLayout {
         invalidate();
         requestLayout();
     }
+
 
 
 }

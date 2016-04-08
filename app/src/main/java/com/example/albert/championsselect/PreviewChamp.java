@@ -1,15 +1,14 @@
 package com.example.albert.championsselect;
 
-import android.content.Intent;
 import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.widget.Spinner;
 import android.widget.Toast;
+
 
 import com.example.albert.lolchamp.LOLChamp;
 
-public class PreviewChamp extends AppCompatActivity {
+public class PreviewChamp extends AppCompatActivity implements LOLChamp.OnAddChampClickedListener{
 
     LOLChamp lolChamp;
 
@@ -26,11 +25,6 @@ public class PreviewChamp extends AppCompatActivity {
         int habilidad = bundle.getInt(SelectionChamp.keyValueHabilidad);
         int dificultad = bundle.getInt(SelectionChamp.keyValueDificultad);
 
-        Toast.makeText(this, "Ataque : " + ataque +
-                "\nDefensa : " + defensa +
-                "\nHabilidad : " + habilidad +
-                "\nDificultad : " + dificultad, Toast.LENGTH_LONG).show();
-
         lolChamp = (LOLChamp)findViewById(R.id.imageChamp);
         setTitle(nameChamp);
 
@@ -45,5 +39,18 @@ public class PreviewChamp extends AppCompatActivity {
         lolChamp.setDefensa(defensa);
         lolChamp.setDificultad(dificultad);
         lolChamp.setHabilidad(habilidad);
+
+        lolChamp.setOnAddChampClickedListener(this);
     }
+
+    @Override
+    public void onAddChampClicked(LOLChamp source, String idUser, int ataque, int defensa, int habilidad, int dificultad) {
+        Toast.makeText(this,"Id user : " + idUser +
+                "\nAtaque : " + ataque +
+                "\nDefensa : " + defensa +
+                "\nHabilidad : " + habilidad +
+                "\nDificultad : " + dificultad ,Toast.LENGTH_LONG).show();
+    }
+
+
 }
