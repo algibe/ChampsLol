@@ -51,6 +51,7 @@ public class LOLChamp extends LinearLayout implements View.OnClickListener {
         init(attrs, defStyle);
     }
 
+
     private void init(AttributeSet attrs, int defStyle) {
         LayoutInflater inflater =
                 (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
@@ -63,6 +64,27 @@ public class LOLChamp extends LinearLayout implements View.OnClickListener {
         seekBarDefensa = (SeekBar)findViewById(R.id.seekBarDefensa);
         seekBarHabilidad = (SeekBar)findViewById(R.id.seekBarHabilidad);
         seekBarDificultad = (SeekBar)findViewById(R.id.seekBarDificultad);
+
+        /*seekBarbAtaque.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+
+            int originalProgress;
+
+            @Override
+            public void onStopTrackingTouch(SeekBar seekBar) {
+            }
+
+            @Override
+            public void onStartTrackingTouch(SeekBar seekBar) {
+                originalProgress = seekBar.getProgress();
+            }
+
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int arg1, boolean fromUser) {
+                if (fromUser) {
+                    seekBar.setProgress(originalProgress);
+                }
+            }
+        });*/
 
         add = (Button)findViewById(R.id.addChamp);
 
@@ -83,19 +105,31 @@ public class LOLChamp extends LinearLayout implements View.OnClickListener {
         if (s != null) { setImg(s);}
 
         String n = a.getString(R.styleable.LOLChamp_nameChamp);
-        if (s != null) { setImg(s);}
+        if (n != null) { setNameChamp(n);}
 
-        int ataque = a.getInt(1, R.styleable.LOLChamp_valueAtaque);
-        if (s != null) { setAtaque(ataque);}
+        /*int ataque = a.getInt(2, R.styleable.LOLChamp_valueAtaque);//////////////////
+        if (ataque >= 0) { setAtaque(ataque);}
 
-        int defensa = a.getInt(1,R.styleable.LOLChamp_valueDefensa);
-        if (s != null) { setDefensa(defensa);}
+        int defensa = a.getInt(5, R.styleable.LOLChamp_valueDefensa);
+        if (defensa >= 0) { setDefensa(defensa);}
 
-        int habilidad = a.getInt(1,R.styleable.LOLChamp_valueHabilidad);
-        if (s != null) { setHabilidad(habilidad);}
+        int habilidad = a.getInt(4, R.styleable.LOLChamp_valueHabilidad);/////////////////
+        if (habilidad >= 0) { setHabilidad(habilidad);}
 
-        int dificultad = a.getInt(1,R.styleable.LOLChamp_valueDificultad);
-        if (s != null) { setDefensa(dificultad);}
+        int dificultad = a.getInt(6, R.styleable.LOLChamp_valueDificultad);
+        if (dificultad >= 0) { setDefensa(dificultad);}*/
+
+        int ataque = a.getInt(R.styleable.LOLChamp_valueAtaque,0);
+        if (ataque >= 0) { setAtaque(ataque);}
+
+        int defensa = a.getInt(R.styleable.LOLChamp_valueDefensa,0);
+        if (defensa >= 0) { setDefensa(defensa);}
+
+        int habilidad = a.getInt(R.styleable.LOLChamp_valueHabilidad,0);
+        if (habilidad >= 0) { setHabilidad(habilidad);}
+
+        int dificultad = a.getInt(R.styleable.LOLChamp_valueDificultad,0);
+        if (dificultad >= 0) { setDificultad(dificultad);}
 
         a.recycle();
 
@@ -104,7 +138,13 @@ public class LOLChamp extends LinearLayout implements View.OnClickListener {
     }
 
     public interface  OnAddChampClickedListener {
-        public void onAddChampClicked(LOLChamp source, String idUser,int ataque,int defensa,int habilidad,int dificultad);
+        public void onAddChampClicked(LOLChamp source,
+                                      String idUser,
+                                      int ataque,
+                                      int defensa,
+                                      int habilidad,
+                                      int dificultad,
+                                      String name);
     }
 
     public void setOnAddChampClickedListener(OnAddChampClickedListener listener ){
@@ -115,10 +155,17 @@ public class LOLChamp extends LinearLayout implements View.OnClickListener {
     public void onClick(View v) {
         if(v.getId() == R.id.addChamp){
             if(mCallback != null){
-                mCallback.onAddChampClicked(this,idUser.getText().toString(),seekBarbAtaque.getProgress(),seekBarDefensa.getProgress(),seekBarHabilidad.getProgress(),seekBarDificultad.getProgress());
+                mCallback.onAddChampClicked(this,
+                        idUser.getText().toString(),
+                        seekBarbAtaque.getProgress(),
+                        seekBarDefensa.getProgress(),
+                        seekBarHabilidad.getProgress(),
+                        seekBarDificultad.getProgress(),
+                        nameChamp.getText().toString());
             }
         }
     }
+
 
     public void setImg(Drawable champ){
         imgChamp.setImageDrawable(champ);
@@ -131,6 +178,7 @@ public class LOLChamp extends LinearLayout implements View.OnClickListener {
         invalidate();
         requestLayout();
     }
+
 
     public void setAtaque(int ataque){
         seekBarbAtaque.setProgress(ataque);

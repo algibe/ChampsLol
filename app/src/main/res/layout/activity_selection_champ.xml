@@ -1,149 +1,155 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<ScrollView
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:padding="20dp"
-    tools:context="com.example.albert.championsselect.SelectionChamp">
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <TextView
-        android:textColor="#000000"
-        android:textSize="20sp"
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="PERSONAJE"/>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@android:color/black"/>
-
-    <Spinner
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="20dp"
-        android:id="@+id/champName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
-
-
-    <TextView
-        android:textColor="#000000"
-        android:textSize="20sp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="STATS"/>
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="1dp"
-        android:background="@android:color/black"/>
-
-    <LinearLayout
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:context="com.example.albert.championsselect.SelectionChamp">
 
         <TextView
-            android:textSize="16sp"
             android:textColor="#000000"
-            android:layout_gravity="center"
-            android:text="Ataque"
-            android:layout_width="80dp"
-            android:gravity="end"
-            android:layout_height="wrap_content" />
-        <SeekBar
-            android:layout_weight="2"
-            android:max="10"
-            android:paddingTop="10dp"
+            android:textSize="20sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/seekBarAtaque" />
+            android:text="PERSONAJE"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"/>
+
+        <Spinner
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/champName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:textColor="#000000"
+            android:textSize="20sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="STATS"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/black"/>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:text="Ataque"
+                android:layout_width="80dp"
+                android:gravity="end"
+                android:layout_height="wrap_content" />
+            <SeekBar
+                android:layout_weight="2"
+                android:max="10"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekBarAtaque" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:text="Defensa"
+                android:layout_width="80dp"
+                android:gravity="end"
+                android:layout_height="wrap_content" />
+            <SeekBar
+                android:layout_weight="2"
+                android:max="10"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekBarDefensa" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:text="Habilidad"
+                android:layout_width="80dp"
+                android:gravity="end"
+                android:layout_height="wrap_content" />
+            <SeekBar
+                android:layout_weight="2"
+                android:max="10"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekBarHabilidad" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:text="Dificultad"
+                android:layout_width="80dp"
+                android:gravity="end"
+                android:layout_height="wrap_content" />
+            <SeekBar
+                android:layout_weight="2"
+                android:max="10"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/seekBarDificultad" />
+
+        </LinearLayout>
+
+        <Button
+            android:textColor="#baa27c"
+            android:background="@drawable/add_champ"
+            android:layout_marginTop="20dp"
+            android:onClick="selectChamp"
+            android:id="@+id/selectChamp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visualizar"/>
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:textSize="16sp"
-            android:textColor="#000000"
-            android:layout_gravity="center"
-            android:text="Defensa"
-            android:layout_width="80dp"
-            android:gravity="end"
-            android:layout_height="wrap_content" />
-        <SeekBar
-            android:layout_weight="2"
-            android:max="10"
-            android:paddingTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/seekBarDefensa" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:textSize="16sp"
-            android:textColor="#000000"
-            android:layout_gravity="center"
-            android:text="Habilidad"
-            android:layout_width="80dp"
-            android:gravity="end"
-            android:layout_height="wrap_content" />
-        <SeekBar
-            android:layout_weight="2"
-            android:max="10"
-            android:paddingTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/seekBarHabilidad" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_marginTop="10dp"
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <TextView
-            android:textSize="16sp"
-            android:textColor="#000000"
-            android:layout_gravity="center"
-            android:text="Dificultad"
-            android:layout_width="80dp"
-            android:gravity="end"
-            android:layout_height="wrap_content" />
-        <SeekBar
-            android:layout_weight="2"
-            android:max="10"
-            android:paddingTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/seekBarDificultad" />
-
-    </LinearLayout>
-
-    <Button
-        android:textColor="#baa27c"
-        android:background="@drawable/add_champ"
-        android:layout_marginTop="20dp"
-        android:onClick="selectChamp"
-        android:id="@+id/selectChamp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Visualizar"/>
-
-
-</LinearLayout>
+</ScrollView>

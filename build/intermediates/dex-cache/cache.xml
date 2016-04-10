@@ -1,12 +1,3 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" >
+<items version="2" />
 
-    <item
-        jar="C:\Users\PCCom\AndroidStudioProjects\ChampsLol\app\build\intermediates\exploded-aar\ChampsLol\lolchamp\unspecified\jars\classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="24e4861b22d7376a6bb2363c4eba79297a51f00b">
-        <dex dex="C:\Users\PCCom\AndroidStudioProjects\ChampsLol\app\build\intermediates\pre-dexed\debug\ChampsLol-lolchamp-unspecified_6a7c75659c2e23368ab86172613ef99c8fb10fc6.jar" />
-    </item>
-
-</items>

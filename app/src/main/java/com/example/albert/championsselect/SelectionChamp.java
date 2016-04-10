@@ -30,10 +30,14 @@ public class SelectionChamp extends AppCompatActivity {
     private SeekBar seekBarHabilidad;
     private SeekBar seekBarDificultad;
 
+    public static LOLDatabase lolDatabase;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_selection_champ);
+
+        lolDatabase = new LOLDatabase(this);
 
         champName = (Spinner)findViewById(R.id.champName);
 

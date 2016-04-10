@@ -33,23 +33,41 @@ public class PreviewChamp extends AppCompatActivity implements LOLChamp.OnAddCha
         Drawable drawable = getResources().getDrawable(id);
 
         lolChamp.setImg(drawable);
-        lolChamp.setNameChamp(nameChamp + " - ");
+        lolChamp.setNameChamp(nameChamp);
 
-        lolChamp.setAtaque(ataque);
-        lolChamp.setDefensa(defensa);
-        lolChamp.setDificultad(dificultad);
-        lolChamp.setHabilidad(habilidad);
+        //lolChamp.setAtaque(ataque);
+        //lolChamp.setDefensa(defensa);
+        //lolChamp.setDificultad(dificultad);
+        //lolChamp.setHabilidad(habilidad);
 
         lolChamp.setOnAddChampClickedListener(this);
     }
 
     @Override
-    public void onAddChampClicked(LOLChamp source, String idUser, int ataque, int defensa, int habilidad, int dificultad) {
-        Toast.makeText(this,"Id user : " + idUser +
+    public void onAddChampClicked(LOLChamp source, String idUser, int ataque, int defensa, int habilidad, int dificultad, String name) {
+
+        /*Toast.makeText(this,"Id user : " + idUser +
+                "\nName : " + name +
                 "\nAtaque : " + ataque +
                 "\nDefensa : " + defensa +
                 "\nHabilidad : " + habilidad +
-                "\nDificultad : " + dificultad ,Toast.LENGTH_LONG).show();
+                "\nDificultad : " + dificultad ,Toast.LENGTH_LONG).show();*/
+
+        Champion champion = new Champion();
+
+        champion.setImg(name);
+        champion.setIdUser(idUser);
+        champion.setName(name);
+        champion.setAtaque(ataque);
+        champion.setDefensa(defensa);
+        champion.setHabilidad(habilidad);
+        champion.setDificultad(dificultad);
+
+        LOLQuerys lolQuerys = new LOLQuerys();
+        lolQuerys.insert(champion,SelectionChamp.lolDatabase);
+
+        finish();
+
     }
 
 

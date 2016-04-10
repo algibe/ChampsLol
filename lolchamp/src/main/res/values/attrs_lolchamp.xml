@@ -1,13 +1,13 @@
 <resources>
     <declare-styleable name="LOLChamp">
-        <attr name="imgChamp" format="integer"/>
+
+        <attr name="imgChamp" format="string"/>
         <attr name="nameChamp" format="string"/>
 
         <attr name="valueAtaque" format="integer"/>
         <attr name="valueDefensa" format="integer"/>
         <attr name="valueHabilidad" format="integer"/>
         <attr name="valueDificultad" format="integer"/>
-
 
     </declare-styleable>
 </resources>

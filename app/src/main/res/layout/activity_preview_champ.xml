@@ -1,16 +1,40 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:custom="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+
+<ScrollView
+    android:background="#dedede"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PreviewChamp">
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <com.example.albert.lolchamp.LOLChamp
-        android:id="@+id/imageChamp"
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        custom:imgChamp="@mipmap/ic_thresh"
-        />
+        android:layout_height="wrap_content"
+        tools:context=".PreviewChamp">
 
-</RelativeLayout>
+        <com.example.albert.lolchamp.LOLChamp
+
+            custom:valueAtaque="0"
+            custom:valueDefensa="1"
+            custom:valueHabilidad="10"
+            custom:valueDificultad="8"
+
+            custom:nameChamp="gfdgdf"
+            android:id="@+id/imageChamp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            custom:imgChamp="@mipmap/ic_braum"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>
+
+
+<!-- Ataque si va
+     Defensa no va
+     Habilidad si va
+     Dificultad pone el valor en defensa
+
+     -->
