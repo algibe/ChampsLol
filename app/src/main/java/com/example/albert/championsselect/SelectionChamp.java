@@ -38,6 +38,8 @@ public class SelectionChamp extends AppCompatActivity {
         setContentView(R.layout.activity_selection_champ);
 
         lolDatabase = new LOLDatabase(this);
+        //LOLQuerys lolQuerys = new LOLQuerys();
+        //lolQuerys.delete(lolDatabase);
 
         champName = (Spinner)findViewById(R.id.champName);
 
@@ -101,5 +103,10 @@ public class SelectionChamp extends AppCompatActivity {
 
         startActivity(intent);
         //Toast.makeText(this,selectedChamp,Toast.LENGTH_LONG).show();
+    }
+
+    public void showChamps(View view) {
+        Intent intent = new Intent(this,ListaChampion.class);
+        startActivity(intent);
     }
 }

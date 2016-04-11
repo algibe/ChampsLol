@@ -84,4 +84,18 @@ public class LOLQuerys {
 
     }
 
+    public boolean deleteById(int id,LOLDatabase lolDatabase) {
+
+        if(lolDatabase.getWritableDatabase() != null){
+
+            String DELETE_FROM_ACTIVITY = "DELETE FROM " + Champion.TABLE_NAME + " WHERE " + Champion.COLUMN_ID + " = " + id;
+            SQLiteDatabase sqLiteDatabase = lolDatabase.getWritableDatabase();
+            sqLiteDatabase.execSQL(DELETE_FROM_ACTIVITY);
+
+            return true;
+        }
+        return false;
+
+    }
+
 }

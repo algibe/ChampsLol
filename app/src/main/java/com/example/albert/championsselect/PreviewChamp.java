@@ -35,10 +35,10 @@ public class PreviewChamp extends AppCompatActivity implements LOLChamp.OnAddCha
         lolChamp.setImg(drawable);
         lolChamp.setNameChamp(nameChamp);
 
-        //lolChamp.setAtaque(ataque);
-        //lolChamp.setDefensa(defensa);
-        //lolChamp.setDificultad(dificultad);
-        //lolChamp.setHabilidad(habilidad);
+        lolChamp.setAtaque(ataque);
+        lolChamp.setDefensa(defensa);
+        lolChamp.setDificultad(dificultad);
+        lolChamp.setHabilidad(habilidad);
 
         lolChamp.setOnAddChampClickedListener(this);
     }

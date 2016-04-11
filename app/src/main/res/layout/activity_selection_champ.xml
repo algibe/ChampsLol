@@ -150,6 +150,17 @@
             android:layout_height="wrap_content"
             android:text="Visualizar"/>
 
+
+        <Button
+            android:textColor="#baa27c"
+            android:background="@drawable/add_champ"
+            android:layout_marginTop="20dp"
+            android:onClick="showChamps"
+            android:id="@+id/showLista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Visualizar todos los campeones"/>
+
     </LinearLayout>
 
 </ScrollView>

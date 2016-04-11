@@ -1,8 +1,5 @@
 package com.example.albert.championsselect;
 
-/**
- * Created by PCCom on 09/04/2016.
- */
 public class Champion {
 
     public static final String TABLE_NAME = "Champ";

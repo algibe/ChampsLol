@@ -9,20 +9,19 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-
         <activity
-            android:windowSoftInputMode="stateHidden"
+            android:name=".PreviewChamp"
             android:configChanges="keyboard|screenSize"
-            android:parentActivityName="com.example.albert.championsselect.SelectionChamp"
-            android:name=".PreviewChamp">
+            android:parentActivityName=".SelectionChamp"
+            android:windowSoftInputMode="stateHidden">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.example.albert.championsselect.SelectionChamp" />
         </activity>
 
         <activity
-            android:configChanges="keyboard|screenSize"
-            android:name=".SelectionChamp">
+            android:name=".SelectionChamp"
+            android:configChanges="keyboard|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -30,7 +29,13 @@
             </intent-filter>
         </activity>
 
-
+        <activity android:name=".ListaChampion"
+            android:parentActivityName="com.example.albert.championsselect.SelectionChamp">
+        <!-- Parent activity meta-data to support 4.0 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.albert.championsselect.SelectionChamp" />
+        </activity>
 
     </application>
 

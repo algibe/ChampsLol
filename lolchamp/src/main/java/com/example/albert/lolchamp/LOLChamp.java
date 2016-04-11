@@ -107,18 +107,6 @@ public class LOLChamp extends LinearLayout implements View.OnClickListener {
         String n = a.getString(R.styleable.LOLChamp_nameChamp);
         if (n != null) { setNameChamp(n);}
 
-        /*int ataque = a.getInt(2, R.styleable.LOLChamp_valueAtaque);//////////////////
-        if (ataque >= 0) { setAtaque(ataque);}
-
-        int defensa = a.getInt(5, R.styleable.LOLChamp_valueDefensa);
-        if (defensa >= 0) { setDefensa(defensa);}
-
-        int habilidad = a.getInt(4, R.styleable.LOLChamp_valueHabilidad);/////////////////
-        if (habilidad >= 0) { setHabilidad(habilidad);}
-
-        int dificultad = a.getInt(6, R.styleable.LOLChamp_valueDificultad);
-        if (dificultad >= 0) { setDefensa(dificultad);}*/
-
         int ataque = a.getInt(R.styleable.LOLChamp_valueAtaque,0);
         if (ataque >= 0) { setAtaque(ataque);}
 
@@ -130,6 +118,16 @@ public class LOLChamp extends LinearLayout implements View.OnClickListener {
 
         int dificultad = a.getInt(R.styleable.LOLChamp_valueDificultad,0);
         if (dificultad >= 0) { setDificultad(dificultad);}
+
+        boolean visible = a.getBoolean(R.styleable.LOLChamp_buttonVisible,true);
+        setVisible(visible);
+
+        boolean isEditable = a.getBoolean(R.styleable.LOLChamp_isEditable,true);
+        setEditable(isEditable);
+
+        String playerName = a.getString(R.styleable.LOLChamp_setNameUser);
+        if(playerName != null){ setUserName(playerName);}
+
 
         a.recycle();
 
@@ -200,6 +198,33 @@ public class LOLChamp extends LinearLayout implements View.OnClickListener {
 
     public void setDificultad(int dificultad){
         seekBarDificultad.setProgress(dificultad);
+        invalidate();
+        requestLayout();
+    }
+
+
+    public void setVisible(boolean visible){
+        if(!visible){
+            add.setVisibility(GONE);
+        } else {
+            add.setVisibility(VISIBLE);
+        }
+        invalidate();
+        requestLayout();
+    }
+
+    public void setEditable(boolean editable){
+        if(!editable){
+            idUser.setEnabled(false);
+        } else {
+            idUser.setEnabled(true);
+        }
+        invalidate();
+        requestLayout();
+    }
+
+    public void setUserName(String userName){
+        idUser.setText(userName);
         invalidate();
         requestLayout();
     }

@@ -9,5 +9,10 @@
         <attr name="valueHabilidad" format="integer"/>
         <attr name="valueDificultad" format="integer"/>
 
+        <attr name="buttonVisible" format="boolean"/>
+        <attr name="isEditable" format="boolean"/>
+
+        <attr name="setNameUser" format="string"/>
+
     </declare-styleable>
 </resources>

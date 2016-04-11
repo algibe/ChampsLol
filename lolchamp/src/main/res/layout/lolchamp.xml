@@ -47,7 +47,7 @@
             android:id="@+id/idUser"
             android:layout_width="match_parent"
             android:layout_height="38dp"
-            android:hint="id_user"/>
+            android:hint="Player name"/>
 
     </LinearLayout>
 

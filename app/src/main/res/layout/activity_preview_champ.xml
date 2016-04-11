@@ -24,8 +24,7 @@
             android:id="@+id/imageChamp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            custom:imgChamp="@mipmap/ic_braum"
-            />
+            custom:imgChamp="@mipmap/ic_braum"/>
 
     </RelativeLayout>
 
