@@ -44,14 +44,7 @@ public class PreviewChamp extends AppCompatActivity implements LOLChamp.OnAddCha
     }
 
     @Override
-    public void onAddChampClicked(LOLChamp source, String idUser, int ataque, int defensa, int habilidad, int dificultad, String name) {
-
-        /*Toast.makeText(this,"Id user : " + idUser +
-                "\nName : " + name +
-                "\nAtaque : " + ataque +
-                "\nDefensa : " + defensa +
-                "\nHabilidad : " + habilidad +
-                "\nDificultad : " + dificultad ,Toast.LENGTH_LONG).show();*/
+    public void onAddChampClicked(LOLChamp source, int img, String idUser, int ataque, int defensa, int habilidad, int dificultad, String name) {
 
         Champion champion = new Champion();
 

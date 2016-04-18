@@ -2,11 +2,11 @@
 <items version="2" >
 
     <item
-        jar="C:\Users\Albert\Documents\GitHub\ChampsLol\app\build\intermediates\exploded-aar\ChampsLol\lolchamp\unspecified\jars\classes.jar"
+        jar="C:\Users\PCCom\AndroidStudioProjects\ChampsLol\app\build\intermediates\exploded-aar\ChampsLol\lolchamp\unspecified\jars\classes.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="2dcb576d88b97f9e1f542c11bfb71d557c1ae8bc">
-        <dex dex="C:\Users\Albert\Documents\GitHub\ChampsLol\app\build\intermediates\pre-dexed\debug\ChampsLol-lolchamp-unspecified_09cf2f8111783563444af267cbb97b67912cbfa2.jar" />
+        sha1="8238bf3f4a6a3a0139b1d19abefaf4a920786573">
+        <dex dex="C:\Users\PCCom\AndroidStudioProjects\ChampsLol\app\build\intermediates\pre-dexed\debug\ChampsLol-lolchamp-unspecified_6a7c75659c2e23368ab86172613ef99c8fb10fc6.jar" />
     </item>
 
 </items>

@@ -15,25 +15,20 @@
 
         <com.example.albert.lolchamp.LOLChamp
 
-            custom:valueAtaque="0"
-            custom:valueDefensa="1"
-            custom:valueHabilidad="10"
-            custom:valueDificultad="8"
+            custom:imgChamp="@mipmap/ic_braum"
+            custom:nameChamp="Braum"
+            custom:setHint="Player name"
 
-            custom:nameChamp="gfdgdf"
+            custom:valueAtaque="10"
+            custom:valueDefensa="0"
+            custom:valueHabilidad="5"
+            custom:valueDificultad="9"
+
             android:id="@+id/imageChamp"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            custom:imgChamp="@mipmap/ic_braum"/>
+            android:layout_height="match_parent"/>
 
     </RelativeLayout>
 
 </ScrollView>
 
-
-<!-- Ataque si va
-     Defensa no va
-     Habilidad si va
-     Dificultad pone el valor en defensa
-
-     -->

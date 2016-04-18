@@ -4,6 +4,7 @@
         <attr name="imgChamp" format="string"/>
         <attr name="nameChamp" format="string"/>
         <attr name="setNameUser" format="string"/>
+        <attr name="setHint" format="string"/>
 
         <attr name="valueAtaque" format="integer"/>
         <attr name="valueDefensa" format="integer"/>
