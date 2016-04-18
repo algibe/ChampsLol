@@ -46,7 +46,7 @@ public class AdapterChamp extends RecyclerView.Adapter<AdapterChamp.AnimeViewHol
     public void onBindViewHolder(AnimeViewHolder viewHolder, int i) {
 
         viewHolder.lolChamp.setNameChamp(items.get(i).getName());
-        viewHolder.lolChamp.setUserName(items.get(i).getName());
+        viewHolder.lolChamp.setUserName(items.get(i).getIdUser());
 
         viewHolder.lolChamp.setAtaque(items.get(i).getAtaque());
         viewHolder.lolChamp.setDefensa(items.get(i).getDefensa());

@@ -24,6 +24,11 @@
             custom:isEditable="false"
             custom:buttonVisible="false"
 
+            custom:editAtaque="false"
+            custom:editDefensa="false"
+            custom:editHabilidad="false"
+            custom:editDificultad="false"
+
             custom:nameChamp="gfdgdf"
             android:id="@+id/layoutChamp"
             android:layout_width="match_parent"

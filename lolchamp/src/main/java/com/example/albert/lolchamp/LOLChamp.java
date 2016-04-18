@@ -65,6 +65,8 @@ public class LOLChamp extends LinearLayout implements View.OnClickListener {
         seekBarHabilidad = (SeekBar)findViewById(R.id.seekBarHabilidad);
         seekBarDificultad = (SeekBar)findViewById(R.id.seekBarDificultad);
 
+
+
         /*seekBarbAtaque.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
 
             int originalProgress;
@@ -107,6 +109,10 @@ public class LOLChamp extends LinearLayout implements View.OnClickListener {
         String n = a.getString(R.styleable.LOLChamp_nameChamp);
         if (n != null) { setNameChamp(n);}
 
+        String playerName = a.getString(R.styleable.LOLChamp_setNameUser);
+        if(playerName != null){ setUserName(playerName);}
+
+
         int ataque = a.getInt(R.styleable.LOLChamp_valueAtaque,0);
         if (ataque >= 0) { setAtaque(ataque);}
 
@@ -119,14 +125,26 @@ public class LOLChamp extends LinearLayout implements View.OnClickListener {
         int dificultad = a.getInt(R.styleable.LOLChamp_valueDificultad,0);
         if (dificultad >= 0) { setDificultad(dificultad);}
 
+
         boolean visible = a.getBoolean(R.styleable.LOLChamp_buttonVisible,true);
         setVisible(visible);
 
         boolean isEditable = a.getBoolean(R.styleable.LOLChamp_isEditable,true);
         setEditable(isEditable);
 
-        String playerName = a.getString(R.styleable.LOLChamp_setNameUser);
-        if(playerName != null){ setUserName(playerName);}
+
+        boolean editAtaque = a.getBoolean(R.styleable.LOLChamp_editAtaque,true);
+        editAtaque(editAtaque);
+
+        boolean editDefensa = a.getBoolean(R.styleable.LOLChamp_editDefensa,true);
+        editDefensa(editAtaque);
+
+        boolean editHabilidad = a.getBoolean(R.styleable.LOLChamp_editHabilidad,true);
+        editHabilidad(editHabilidad);
+
+        boolean editDificultad = a.getBoolean(R.styleable.LOLChamp_editDificultad,true);
+        editDificultad(editDificultad);
+
 
 
         a.recycle();
@@ -177,6 +195,12 @@ public class LOLChamp extends LinearLayout implements View.OnClickListener {
         requestLayout();
     }
 
+    public void setUserName(String userName){
+        idUser.setText(userName);
+        invalidate();
+        requestLayout();
+    }
+
 
     public void setAtaque(int ataque){
         seekBarbAtaque.setProgress(ataque);
@@ -214,20 +238,120 @@ public class LOLChamp extends LinearLayout implements View.OnClickListener {
     }
 
     public void setEditable(boolean editable){
-        if(!editable){
-            idUser.setEnabled(false);
-        } else {
-            idUser.setEnabled(true);
+        idUser.setEnabled(editable);
+        invalidate();
+        requestLayout();
+    }
+
+
+    public void editAtaque(boolean ataque){
+        if(!ataque){
+            seekBarbAtaque.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+
+                int originalProgress;
+
+                @Override
+                public void onStopTrackingTouch(SeekBar seekBar) {
+                }
+
+                @Override
+                public void onStartTrackingTouch(SeekBar seekBar) {
+                    originalProgress = seekBar.getProgress();
+                }
+
+                @Override
+                public void onProgressChanged(SeekBar seekBar, int arg1, boolean fromUser) {
+                    if (fromUser) {
+                        seekBar.setProgress(originalProgress);
+                    }
+                }
+            });
         }
         invalidate();
         requestLayout();
     }
 
-    public void setUserName(String userName){
-        idUser.setText(userName);
+    public void editDefensa(boolean defensa){
+        if(!defensa){
+            seekBarDefensa.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+
+                int originalProgress;
+
+                @Override
+                public void onStopTrackingTouch(SeekBar seekBar) {
+                }
+
+                @Override
+                public void onStartTrackingTouch(SeekBar seekBar) {
+                    originalProgress = seekBar.getProgress();
+                }
+
+                @Override
+                public void onProgressChanged(SeekBar seekBar, int arg1, boolean fromUser) {
+                    if (fromUser) {
+                        seekBar.setProgress(originalProgress);
+                    }
+                }
+            });
+        }
         invalidate();
         requestLayout();
     }
+
+    public void editHabilidad(boolean habilidad){
+        if(!habilidad){
+            seekBarHabilidad.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+
+                int originalProgress;
+
+                @Override
+                public void onStopTrackingTouch(SeekBar seekBar) {
+                }
+
+                @Override
+                public void onStartTrackingTouch(SeekBar seekBar) {
+                    originalProgress = seekBar.getProgress();
+                }
+
+                @Override
+                public void onProgressChanged(SeekBar seekBar, int arg1, boolean fromUser) {
+                    if (fromUser) {
+                        seekBar.setProgress(originalProgress);
+                    }
+                }
+            });
+        }
+        invalidate();
+        requestLayout();
+    }
+
+    public void editDificultad(boolean dificultad){
+        if(!dificultad){
+            seekBarDificultad.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
+
+                int originalProgress;
+
+                @Override
+                public void onStopTrackingTouch(SeekBar seekBar) {
+                }
+
+                @Override
+                public void onStartTrackingTouch(SeekBar seekBar) {
+                    originalProgress = seekBar.getProgress();
+                }
+
+                @Override
+                public void onProgressChanged(SeekBar seekBar, int arg1, boolean fromUser) {
+                    if (fromUser) {
+                        seekBar.setProgress(originalProgress);
+                    }
+                }
+            });
+        }
+        invalidate();
+        requestLayout();
+    }
+
 
 
 

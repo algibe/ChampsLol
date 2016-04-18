@@ -3,6 +3,7 @@
 
         <attr name="imgChamp" format="string"/>
         <attr name="nameChamp" format="string"/>
+        <attr name="setNameUser" format="string"/>
 
         <attr name="valueAtaque" format="integer"/>
         <attr name="valueDefensa" format="integer"/>
@@ -12,7 +13,11 @@
         <attr name="buttonVisible" format="boolean"/>
         <attr name="isEditable" format="boolean"/>
 
-        <attr name="setNameUser" format="string"/>
+        <attr name="editAtaque" format="boolean"/>
+        <attr name="editDefensa" format="boolean"/>
+        <attr name="editHabilidad" format="boolean"/>
+        <attr name="editDificultad" format="boolean"/>
+
 
     </declare-styleable>
 </resources>

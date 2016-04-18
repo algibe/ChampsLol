@@ -40,6 +40,7 @@
 
 
         <EditText
+            android:singleLine="true"
             android:paddingLeft="10dp"
             android:background="@drawable/edit_text"
             android:textColor="#5d5e5e"
