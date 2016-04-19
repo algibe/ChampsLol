@@ -178,7 +178,6 @@ public class LOLChamp extends LinearLayout implements View.OnClickListener {
         }
     }
 
-
     //Insertar la imagen en la imageView
     public void setImg(Drawable champ){
         imgChamp.setImageDrawable(champ);
@@ -367,8 +366,5 @@ public class LOLChamp extends LinearLayout implements View.OnClickListener {
         invalidate();
         requestLayout();
     }
-
-
-
 
 }

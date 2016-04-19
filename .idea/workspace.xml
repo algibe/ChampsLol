@@ -48,25 +48,22 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LOLChamp.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LOLChamp.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lolchamp/src/main/java/com/example/albert/lolchamp/LOLChamp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="232" column="11" selection-start-line="232" selection-start-column="11" selection-end-line="232" selection-end-column="11" />
+            <state vertical-scroll-proportion="0.39177102">
+              <caret line="256" column="0" selection-start-line="256" selection-start-column="0" selection-end-line="256" selection-end-column="0" />
               <folding>
                 <element signature="method#LOLChamp#0;class#LOLChamp#0" expanded="false" />
                 <element signature="method#LOLChamp#1;class#LOLChamp#0" expanded="false" />
                 <element signature="method#LOLChamp#2;class#LOLChamp#0" expanded="false" />
-                <element signature="method#setOnAddChampClickedListener#0;class#LOLChamp#0" expanded="false" />
-                <element signature="method#setImg#0;class#LOLChamp#0" expanded="false" />
+                <element signature="class#OnAddChampClickedListener#0;class#LOLChamp#0" expanded="false" />
                 <element signature="method#setNameChamp#0;class#LOLChamp#0" expanded="false" />
-                <element signature="method#setUserName#0;class#LOLChamp#0" expanded="false" />
                 <element signature="method#setHintText#0;class#LOLChamp#0" expanded="false" />
                 <element signature="method#setAtaque#0;class#LOLChamp#0" expanded="false" />
                 <element signature="method#setHabilidad#0;class#LOLChamp#0" expanded="false" />
                 <element signature="method#setDefensa#0;class#LOLChamp#0" expanded="false" />
                 <element signature="method#setDificultad#0;class#LOLChamp#0" expanded="false" />
-                <element signature="method#setVisible#0;class#LOLChamp#0" expanded="false" />
                 <element signature="method#setEditable#0;class#LOLChamp#0" expanded="false" />
                 <element signature="method#editAtaque#0;class#LOLChamp#0" expanded="false" />
                 <element signature="method#editDefensa#0;class#LOLChamp#0" expanded="false" />
@@ -77,12 +74,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PreviewChamp.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="activity_preview_champ.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_preview_champ.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-9.965517">
+              <caret line="17" column="27" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PreviewChamp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/albert/championsselect/PreviewChamp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.51261467">
-              <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,7 +103,7 @@
         <entry file="file://$PROJECT_DIR$/lolchamp/src/main/res/values/attrs_lolchamp.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -99,8 +111,11 @@
       </file>
       <file leaf-file-name="lolchamp.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lolchamp/src/main/res/layout/lolchamp.xml">
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-25.793104">
+            <state vertical-scroll-proportion="0.0">
               <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
               <folding>
                 <element signature="e#1791#2644#0" expanded="false" />
@@ -110,9 +125,6 @@
                 <element signature="e#5251#5577#0" expanded="false" />
               </folding>
             </state>
-          </provider>
-          <provider editor-type-id="android-designer">
-            <state />
           </provider>
         </entry>
       </file>
@@ -144,12 +156,12 @@
                 <option name="path" value="$PROJECT_DIR$/app" />
               </ExternalProjectPojo>
               <ExternalProjectPojo>
-                <option name="name" value=":lolchamp" />
-                <option name="path" value="$PROJECT_DIR$/lolchamp" />
-              </ExternalProjectPojo>
-              <ExternalProjectPojo>
                 <option name="name" value="ChampsLol" />
                 <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value=":lolchamp" />
+                <option name="path" value="$PROJECT_DIR$/lolchamp" />
               </ExternalProjectPojo>
             </list>
           </value>
@@ -2522,11 +2534,11 @@
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/albert/championsselect/ListaChampion.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/albert/championsselect/AdapterChamp.java" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/list_champ.xml" />
-        <option value="$PROJECT_DIR$/lolchamp/src/main/res/values/attrs_lolchamp.xml" />
         <option value="$PROJECT_DIR$/lolchamp/src/main/res/layout/lolchamp.xml" />
         <option value="$PROJECT_DIR$/app/src/main/res/layout/activity_preview_champ.xml" />
-        <option value="$PROJECT_DIR$/lolchamp/src/main/java/com/example/albert/lolchamp/LOLChamp.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/albert/championsselect/PreviewChamp.java" />
+        <option value="$PROJECT_DIR$/lolchamp/src/main/res/values/attrs_lolchamp.xml" />
+        <option value="$PROJECT_DIR$/lolchamp/src/main/java/com/example/albert/lolchamp/LOLChamp.java" />
       </list>
     </option>
   </component>
@@ -2543,8 +2555,8 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1382" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -2569,9 +2581,10 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="AndroidView">
         <subPane>
           <PATH>
@@ -2748,7 +2761,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -2942,8 +2954,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32777777" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -2953,16 +2965,16 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6811111" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6788889" sideWeight="0.4969743" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2675906" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6780239" sideWeight="0.4969743" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.26701966" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32666665" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3253833" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="14" side_tool="true" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.15351813" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21558245" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
@@ -3031,6 +3043,41 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/albert/championsselect/PreviewChamp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lolchamp/src/main/res/values/attrs_lolchamp.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lolchamp/src/main/res/layout/lolchamp.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
+          <folding>
+            <element signature="e#1791#2644#0" expanded="false" />
+            <element signature="e#2650#3506#0" expanded="false" />
+            <element signature="e#3512#4374#0" expanded="false" />
+            <element signature="e#4380#5245#0" expanded="false" />
+            <element signature="e#5251#5577#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lolchamp/src/main/res/values/attrs_lolchamp.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -3047,16 +3094,13 @@
             <element signature="method#LOLChamp#0;class#LOLChamp#0" expanded="false" />
             <element signature="method#LOLChamp#1;class#LOLChamp#0" expanded="false" />
             <element signature="method#LOLChamp#2;class#LOLChamp#0" expanded="false" />
-            <element signature="method#setOnAddChampClickedListener#0;class#LOLChamp#0" expanded="false" />
-            <element signature="method#setImg#0;class#LOLChamp#0" expanded="false" />
+            <element signature="class#OnAddChampClickedListener#0;class#LOLChamp#0" expanded="false" />
             <element signature="method#setNameChamp#0;class#LOLChamp#0" expanded="false" />
-            <element signature="method#setUserName#0;class#LOLChamp#0" expanded="false" />
             <element signature="method#setHintText#0;class#LOLChamp#0" expanded="false" />
             <element signature="method#setAtaque#0;class#LOLChamp#0" expanded="false" />
             <element signature="method#setHabilidad#0;class#LOLChamp#0" expanded="false" />
             <element signature="method#setDefensa#0;class#LOLChamp#0" expanded="false" />
             <element signature="method#setDificultad#0;class#LOLChamp#0" expanded="false" />
-            <element signature="method#setVisible#0;class#LOLChamp#0" expanded="false" />
             <element signature="method#setEditable#0;class#LOLChamp#0" expanded="false" />
             <element signature="method#editAtaque#0;class#LOLChamp#0" expanded="false" />
             <element signature="method#editDefensa#0;class#LOLChamp#0" expanded="false" />
@@ -3067,14 +3111,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_champ.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lolchamp/src/main/res/values/attrs_lolchamp.xml">
@@ -3093,16 +3137,13 @@
             <element signature="method#LOLChamp#0;class#LOLChamp#0" expanded="false" />
             <element signature="method#LOLChamp#1;class#LOLChamp#0" expanded="false" />
             <element signature="method#LOLChamp#2;class#LOLChamp#0" expanded="false" />
-            <element signature="method#setOnAddChampClickedListener#0;class#LOLChamp#0" expanded="false" />
-            <element signature="method#setImg#0;class#LOLChamp#0" expanded="false" />
+            <element signature="class#OnAddChampClickedListener#0;class#LOLChamp#0" expanded="false" />
             <element signature="method#setNameChamp#0;class#LOLChamp#0" expanded="false" />
-            <element signature="method#setUserName#0;class#LOLChamp#0" expanded="false" />
             <element signature="method#setHintText#0;class#LOLChamp#0" expanded="false" />
             <element signature="method#setAtaque#0;class#LOLChamp#0" expanded="false" />
             <element signature="method#setHabilidad#0;class#LOLChamp#0" expanded="false" />
             <element signature="method#setDefensa#0;class#LOLChamp#0" expanded="false" />
             <element signature="method#setDificultad#0;class#LOLChamp#0" expanded="false" />
-            <element signature="method#setVisible#0;class#LOLChamp#0" expanded="false" />
             <element signature="method#setEditable#0;class#LOLChamp#0" expanded="false" />
             <element signature="method#editAtaque#0;class#LOLChamp#0" expanded="false" />
             <element signature="method#editDefensa#0;class#LOLChamp#0" expanded="false" />
@@ -3113,14 +3154,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_champ.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/albert/championsselect/SelectionChamp.java">
@@ -3138,14 +3179,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_lista_champion.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/albert/championsselect/PreviewChamp.java">
@@ -3156,13 +3197,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_preview_champ.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="20" column="37" selection-start-line="20" selection-start-column="37" selection-end-line="20" selection-end-column="37" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lolchamp/src/main/java/com/example/albert/lolchamp/LOLChamp.java">
@@ -3194,13 +3235,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lolchamp/src/main/res/layout/lolchamp.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="8" selection-start-line="32" selection-start-column="8" selection-end-line="32" selection-end-column="8" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/albert/championsselect/SelectionChamp.java">
@@ -3218,13 +3259,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lolchamp/src/main/res/layout/lolchamp.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="0" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/albert/championsselect/SelectionChamp.java">
@@ -3242,13 +3283,13 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lolchamp/src/main/res/layout/lolchamp.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/albert/championsselect/SelectionChamp.java">
@@ -3358,14 +3399,14 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_lista_champion.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.551724">
           <caret line="18" column="38" selection-start-line="18" selection-start-column="38" selection-end-line="18" selection-end-column="38" />
           <folding />
         </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lolchamp/src/main/res/drawable/edit_text.xml">
@@ -3390,30 +3431,33 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/list_champ.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.7058126">
           <caret line="35" column="40" selection-start-line="35" selection-start-column="40" selection-end-line="35" selection-end-column="40" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_selection_champ.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_selection_champ.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
           <folding />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lolchamp/src/main/res/layout/lolchamp.xml">
       <provider editor-type-id="android-designer">
         <state />
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lolchamp/src/main/res/layout/lolchamp.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-25.793104">
+        <state vertical-scroll-proportion="0.0">
           <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
           <folding>
             <element signature="e#1791#2644#0" expanded="false" />
@@ -3424,61 +3468,57 @@
           </folding>
         </state>
       </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_preview_champ.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6856465">
-          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lolchamp/src/main/res/values/attrs_lolchamp.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <caret line="3" column="45" selection-start-line="3" selection-start-column="45" selection-end-line="3" selection-end-column="45" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_preview_champ.xml">
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.965517">
+          <caret line="17" column="27" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/albert/championsselect/PreviewChamp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="11" selection-start-line="42" selection-start-column="11" selection-end-line="42" selection-end-column="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lolchamp/src/main/java/com/example/albert/lolchamp/LOLChamp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="232" column="11" selection-start-line="232" selection-start-column="11" selection-end-line="232" selection-end-column="11" />
+        <state vertical-scroll-proportion="0.39177102">
+          <caret line="256" column="0" selection-start-line="256" selection-start-column="0" selection-end-line="256" selection-end-column="0" />
           <folding>
             <element signature="method#LOLChamp#0;class#LOLChamp#0" expanded="false" />
             <element signature="method#LOLChamp#1;class#LOLChamp#0" expanded="false" />
             <element signature="method#LOLChamp#2;class#LOLChamp#0" expanded="false" />
-            <element signature="method#setOnAddChampClickedListener#0;class#LOLChamp#0" expanded="false" />
-            <element signature="method#setImg#0;class#LOLChamp#0" expanded="false" />
+            <element signature="class#OnAddChampClickedListener#0;class#LOLChamp#0" expanded="false" />
             <element signature="method#setNameChamp#0;class#LOLChamp#0" expanded="false" />
-            <element signature="method#setUserName#0;class#LOLChamp#0" expanded="false" />
             <element signature="method#setHintText#0;class#LOLChamp#0" expanded="false" />
             <element signature="method#setAtaque#0;class#LOLChamp#0" expanded="false" />
             <element signature="method#setHabilidad#0;class#LOLChamp#0" expanded="false" />
             <element signature="method#setDefensa#0;class#LOLChamp#0" expanded="false" />
             <element signature="method#setDificultad#0;class#LOLChamp#0" expanded="false" />
-            <element signature="method#setVisible#0;class#LOLChamp#0" expanded="false" />
             <element signature="method#setEditable#0;class#LOLChamp#0" expanded="false" />
             <element signature="method#editAtaque#0;class#LOLChamp#0" expanded="false" />
             <element signature="method#editDefensa#0;class#LOLChamp#0" expanded="false" />
             <element signature="method#editHabilidad#0;class#LOLChamp#0" expanded="false" />
             <element signature="method#editDificultad#0;class#LOLChamp#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/albert/championsselect/PreviewChamp.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51261467">
-          <caret line="48" column="0" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
